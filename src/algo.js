@@ -76,6 +76,7 @@ function run(up = 'ATGCT', left = 'AGCT') {
           arr[i][j].color = filledColor
           // console.log(i, j, 'mismatch diag')
           traceback(i - 1, j - 1)
+          solution += arr[i][0].letter
         } else if (leftVal >= diagVal && leftVal >= upVal) {
           // set left val to green
           arr[i][j].color = filledColor
