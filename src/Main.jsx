@@ -21,7 +21,7 @@ const Main = () => {
 
   const submitHandler = (event) => {
     event.preventDefault()
-    let { arr, input, finalSolution, runtime } = algo.run()
+    let { arr, input, finalSolution, runtime } = algo.run(sequence1, sequence2)
     setResult({ arr, input, finalSolution, runtime })
   }
 
