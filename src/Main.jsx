@@ -86,7 +86,7 @@ const Main = () => {
             {result.arr.map((row, index1) =>
               row.map((col, index2) => (
                 <div
-                  className={`bg-${col.color} text-base w-8 h-8 border flex justify-center items-center`}
+                  className={`${col.color} text-base w-8 h-8 border flex justify-center items-center`}
                 >
                   {index1 === 0 || index2 === 0 ? col.letter : col.value}
                 </div>

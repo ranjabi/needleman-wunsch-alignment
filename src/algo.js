@@ -9,7 +9,7 @@ function run(up = 'ATGCT', left = 'AGCT') {
   const mismatchScore = -1
   const gapScore = -2
 
-  const filledColor = 'green-400'
+  const filledColor = 'bg-green-400'
 
   const row = up.length + 1 // 6
   const col = left.length + 1 // 5
@@ -21,7 +21,7 @@ function run(up = 'ATGCT', left = 'AGCT') {
     constructor(letter, value) {
       this.letter = letter
       this.value = value
-      this.color = 'white'
+      this.color = 'bg-white'
     }
   }
 
