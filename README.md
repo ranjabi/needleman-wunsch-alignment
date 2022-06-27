@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+![alt text](https://github.com/ranjabi/needleman-wunsch-alignment/blob/main/wna-algo.png "Website Preview")
+
 ## Cara Penggunaan Program
 Kunjungi [https://needleman-wunsch-alignment.netlify.app/](https://needleman-wunsch-alignment.netlify.app/) untuk menjalankan program secara online atau jalankan script di bawah jika ingin menjalankan di local machine.
 
@@ -29,3 +31,22 @@ Setiap baris dan kolom akan memiliki nilai sesuai dengan parameter skor match, m
 
 ## Framework/Library
 Algoritma Needleman-Wunsch ini diimplementasikan ke dalam aplikasi berbasis website dengan memanfaatkan library ReactJS dan framework Tailwind CSS.
+
+## Test Cases
+TC 1
+
+Sequence 1: TTAAGCGTGACAGTCCCAGTGAATTAAGCGTGACAGTCCCAGTGAA
+
+Sequence 2: CCTTCTCGAGTTCCGTCCGG
+
+TC 2
+
+Sequence 1: GGAGTCATACGCAAGAAGGATGGTCTC
+
+Sequence 2: CCCACAAACCGTGATGGCTGTCCTT
+
+TC 3
+
+Sequence 1: TAGAACTGGACGTGCGGTTTCTCTGCGAAGAACAC
+
+Sequence 2: CAGACACCGGCGCACCAGTTTTCACGCCGA
