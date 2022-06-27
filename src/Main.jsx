@@ -14,7 +14,7 @@ const Main = () => {
   // }, [])
 
   const resultbox = {
-    margin: '1rem auto',
+    margin: '0.5rem auto',
     display: 'grid',
     gridTemplateColumns: `repeat(${result === null? 0 : result.arr[0].length}, 40px)`,
   }
@@ -88,7 +88,7 @@ const Main = () => {
                 <div
                   className={`${col.color} text-base w-8 h-8 border flex justify-center items-center`}
                 >
-                  {index1 === 0 || index2 === 0 ? col.letter : col.value}
+                  {index1 === 0 || index2 === 0 ? col.letter + ',' + col.value : col.value}
                 </div>
               ))
             )}
