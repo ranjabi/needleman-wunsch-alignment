@@ -3,7 +3,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Cara Penggunaan Program
-Kunjungi nwa-dna.netlify.com untuk menjalankan program secara online atau jalankan script di bawah jika ingin menjalankan di local machine.
+Kunjungi [https://needleman-wunsch-alignment.netlify.app/](https://needleman-wunsch-alignment.netlify.app/) untuk menjalankan program secara online atau jalankan script di bawah jika ingin menjalankan di local machine.
 
 After cloning this repository, in the project directory, you can run:
 
