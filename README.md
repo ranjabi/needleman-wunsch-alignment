@@ -1,10 +1,11 @@
-# Getting Started with Create React App
+# needleman-wunsch-alignment
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Cara Penggunaan Program
+Kunjungi nwa-dna.netlify.com untuk menjalankan program secara online atau jalankan script di bawah jika ingin menjalankan di local machine.
 
-In the project directory, you can run:
+After cloning this repository, in the project directory, you can run:
 
 ### `npm start`
 
@@ -14,57 +15,17 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+## Algoritma Needleman-Wunsch
+Algoritma ini digunakan untuk penyelasaran dua barisan DNA.
+### Proses Pembuatan Matriks
+Dibuat sebuah matriks berukuran m * n dengan m adalah panjang dari barisan DNA 2 dan n adalah panjang dari barisan DNA 1. Kolom dan baris pertama dari matriks diisi dengan skor gap yang telah ditentukan secara meningkat.
+### Pemilihan Rute Traceback
+Setiap baris dan kolom akan memiliki nilai sesuai dengan parameter skor match, mismatch, dan gap. Penelurusan kembali akan dimulai dari posisi array [m][n] menuju posisi [0][0]. Jika huruf pada baris m dan huruf pada kolom n cocok, maka dipilih rute diagonal. Tetapi jika kedua huruf tidak cocok, maka dipilih arah dengan skor yang paling tinggi. Penyelarasan huruf yang tidak cocok termasuk ke dalam gap.
+### Penetapan Skema Skoring
+...
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Referensi
+...
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Framework/Library
+Algoritma Needleman-Wunsch ini diimplementasikan ke dalam aplikasi berbasis website dengan memanfaatkan library ReactJS dan framework Tailwind CSS.
